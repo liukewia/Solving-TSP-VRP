@@ -1,38 +1,38 @@
 # Solving-TSP-VRP
 A MATLAB Implementation of Heuristic Algorithms to Traveling Salesman Problem and Vehicle Routing Problems.
 
-## Calculation Objective
-Minimum travel distance of all vehicles in each time of route planning. The objective can be something else other than distance if one wish.
+## Goal
+To explore the value of minimum distance that all vehicles travel in each time of route planning. (The objective value can be something else other than distance if one wish, such as time, cost, etc.)
 
 ## Environment
 * MATLAB
 
 ## Folder Naming
 
-Structure of folder names: `Algorithm Name` + `Problem Name`
+Folder name structure: `Algorithm Name` + `Problem Name`
 
-* Algorithms:
+* Prefix of the folder name--Algorithms:
 
-| Prefix of the Folder Name  | Algorithm Name |
+| Algorithm Abbreviation | Algorithm Name |
 | ------------- | ------------- |
 | GA  | Genetic Algorithm  |
 | ACO  | Ant Colony Optimization  |
 | SA  | Simulated Annealing  |
 | HPSO  | Hybrid Particle Swarm Optimization (Genetic Algorithm involved)  |
 
-* Problems:
+* Suffix of the folder name--Problems:
 
-| Suffix of the Folder Name  | Problem Name |
+| Problem Abbreviation | Problem Name |
 | ------------- | ------------- |
 | TSP  | Traveling Salesman Problem  |
-| DVRP  | Vehicle Routing Problem with travel Distance constraint |
-| CVRP  | Vehicle Routing Problem with Capacity constraint  |
-| CDVRP  | Vehicle Routing Problem with travel Distance and Capacity constraint  |
-| VRPTW  | Vehicle Routing Problem with travel Distance constraint, Capacity constraint, and Time Window constraint |
+| DVRP  | Vehicle Routing Problem with travel distance constraint |
+| CVRP  | Vehicle Routing Problem with capacity constraint  |
+| CDVRP  | Vehicle Routing Problem with travel distance and capacity constraint  |
+| VRPTW  | Vehicle Routing Problem with travel distance constraint, capacity constraint, and hard time window constraint |
 
 ## Sample Output
 
-1. Text Output in Command Window
+1. Sample Text Output in the Command Window
 
 ```MATLAB
 ...
@@ -53,15 +53,15 @@ Total Distance = 204.653 km
 Best Route:
 0 -> 5 -> 10 -> 2 -> 0 -> 3 -> 6 -> 9 -> 1 -> 0 -> 7 -> 4 -> 8 -> 0
 -------------------------------------------------------------
-Route of Vehichle No.1: 0 -> 5 -> 10 -> 2 -> 0
+Route of vehichle No.1: 0 -> 5 -> 10 -> 2 -> 0
 Time of arrival: 0 - 46.9 - 59.5 - 159.7 - 216.1 min
 Distance traveled: 70.15 km, time elapsed: 216.1 min, load rate: 90.00%;
 -------------------------------------------------------------
-Route of Vehichle No.2: 0 -> 3 -> 6 -> 9 -> 1 -> 0
+Route of vehichle No.2: 0 -> 3 -> 6 -> 9 -> 1 -> 0
 Time of arrival: 0 - 45.9 - 58 - 72.7 - 97.3 - 138.4 min
 Distance traveled: 74.29 km, time elapsed: 138.4 min, load rate: 90.00%;
 -------------------------------------------------------------
-Route of Vehichle No.3: 0 -> 7 -> 4 -> 8 -> 0
+Route of vehichle No.3: 0 -> 7 -> 4 -> 8 -> 0
 Time of arrival: 0 - 48 - 72.1 - 90.6 - 128.2 min
 Distance traveled: 60.22 km, time elapsed: 128.2 min, load rate: 90.00%;
 -------------------------------------------------------------
@@ -76,13 +76,13 @@ Distance traveled: 60.22 km, time elapsed: 128.2 min, load rate: 90.00%;
 
 ![Sample_of_TSP_Route_Map](https://github.com/liukewia/Solving-TSP-VRP/blob/master/images/Sample_of_TSP_Route_Map.jpg)
 
-4. Sample Graph of VRP Route Map (Hard Time window constraint was considered)
+4. Sample Graph of VRP Route Map (Hard time window constraint is considered)
 
 ![Sample_of_VRP_Route_Map](https://github.com/liukewia/Solving-TSP-VRP/blob/master/images/Sample_of_VRP_Route_Map.jpg)
 
 
 ## Usage
-Pull the source code from `master` and open `Main.m` in a folder (if the file existed) to run that solver.
+Pull the source code from `master` and open `Main.m` in either folder (if the file exists) to run that solver.
 
 ## License
 GNU General Public License (GPL)
