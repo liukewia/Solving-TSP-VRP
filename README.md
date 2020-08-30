@@ -9,7 +9,7 @@ Minimum travel distance of all vehicles in each time of route planning. The obje
 
 # Folder Naming
 
-Folder name structure: `Algorithm Name` + `Problem Name`
+Structure of folder names: `Algorithm Name` + `Problem Name`
 
 Algorithms Naming:
 
