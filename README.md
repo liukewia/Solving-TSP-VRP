@@ -31,7 +31,7 @@ Algorithms Naming:
 | VRPTW  | Vehicle Routing Problem with travel Distance constraint, Capacity constraint, and Time Window constraint |
 
 # Usage
-Pull the source code from `master` and open `Main.m` in any folder (if the file existed) to run.
+Pull the source code from `master` and open `Main.m` in a folder (if the file existed) to run that solver.
 
 # License
 GNU General Public License (GPL)
