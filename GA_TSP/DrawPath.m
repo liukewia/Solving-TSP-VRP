@@ -34,6 +34,6 @@ for i=2:length(A)
 end
 set(gca, 'LineWidth',1)
 %hold off	%将保留状态设置为 off，从而使新添加到坐标区中的绘图清除现有绘图并重置所有的坐标区属性
-xlabel('北纬(°)')
-ylabel('东经(°)')
-title('配送路线图')
+xlabel('North Latitude(°)')
+ylabel('East Longitude(°)')
+title('Route Map')

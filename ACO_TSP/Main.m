@@ -110,7 +110,7 @@ while Iter <= MaxIter %当未到达最大迭代次数
 	Tau = (1-Rho) * Tau + Delta_Tau; %对信息素矩阵进行整体计算，减去挥发，加上新生成的信息素
     
     %% 显示此代信息
-    fprintf('迭代次数 = %d, 最短距离 = %.2f km  \n',Iter,MinDis(Iter))
+    fprintf('Iteration = %d, Min Distance = %.2f km  \n',Iter,MinDis(Iter))
     
     %% 更新迭代次数
 	Iter = Iter + 1; %迭代次数加1
@@ -132,9 +132,9 @@ figure
 plot(MinDis,'LineWidth',2) %展示目标函数值历史变化
 xlim([1 Iter-1]) %设置 x 坐标轴范围
 set(gca, 'LineWidth',1)
-xlabel('迭代次数')
-ylabel('最短距离(km)')
-title('蚁群算法优化过程')
+xlabel('Iterations')
+ylabel('Min Distance(km)')
+title('ACO Process')
 
 %% 绘制实际路线
 DrawPath(bestroute,City)

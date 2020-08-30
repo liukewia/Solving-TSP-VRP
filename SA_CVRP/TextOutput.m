@@ -31,8 +31,8 @@ for j=2:len
 
 	if route(j)==1 %若此位是配送中心
         disp('-------------------------------------------------------------')
-        fprintf('第 %d 辆车：行驶路径为 %s  \n',Vnum,subpath)%输出：每辆车 路径 
-        fprintf('行驶路程为 %.2f km,满载率为 %.2f%%;  \n',DisTraveled,delivery/Capacity*100)%输出：行驶距离 满载率
+        fprintf('Route of Vehichle No.%d: %s  \n',Vnum,subpath)%输出：每辆车 路径 
+        fprintf('Distance traveled: %.2f km, load rate: %.2f%%;  \n',DisTraveled,delivery/Capacity*100)%输出：行驶距离 满载率
         Vnum=Vnum+1; %车辆数累加
         DisTraveled=0; %已行驶距离置零
         delivery=0; %已配送置零

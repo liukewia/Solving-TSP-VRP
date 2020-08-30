@@ -84,7 +84,7 @@ while T0 > Tend
     
     T0 = q * T0; %降温
      %% 显示此代信息
-    fprintf('迭代次数 = %d,  最短距离 = %.2f km  \n',count,BestObjByIter(count)) %输出当前迭代信息
+    fprintf('Iteration = %d, Min Distance = %.2f km  \n',count,BestObjByIter(count)) %输出当前迭代信息
 end
 
 %% 找出历史最短距离和对应路径
@@ -104,7 +104,7 @@ bestroute=bestroute-1;  % 编码各减1，与文中的编码一致
 %% 计算结果数据输出到命令行
 disp('-------------------------------------------------------------')
 toc %显示运行时间
-fprintf('总距离 = %s km \n',num2str(mindisever))
+fprintf('Total Distance = %s km \n',num2str(mindisever))
 TextOutput(Distance,Demand,bestroute,Capacity)  %显示最优路径
 disp('-------------------------------------------------------------')
 
@@ -113,9 +113,9 @@ figure
 plot(BestObjByIter,'LineWidth',2)
 xlim([1 count]) %设置 x 坐标轴范围
 set(gca, 'LineWidth',1)
-xlabel('迭代次数')
-ylabel('最短距离(km)')
-title('模拟退火算法优化过程')
+xlabel('Iterations')
+ylabel('Min Distance(km)')
+title('SA Optimization Process')
 
 %% 绘制最优解的实际路线
 DrawPath(bestroute,City)

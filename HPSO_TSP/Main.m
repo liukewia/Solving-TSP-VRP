@@ -99,7 +99,7 @@ while gen <= MAXGEN
     end
     
     %% 显示此代信息
-    fprintf('迭代次数 = %d,  最短距离 = %.2f km  \n',gen,GbestDistance)
+    fprintf('Iteration = %d, Min Distance = %.2f km  \n',gen,GbestDistance)
     
 	%% 存储此代最短距离
     GbestDisByGen(gen)=GbestDistance;
@@ -118,9 +118,9 @@ figure
 plot(GbestDisByGen,'LineWidth',2) %展示目标函数值历史变化
 xlim([1 gen-1]) %设置 x 坐标轴范围
 set(gca, 'LineWidth',1)
-xlabel('迭代次数')
-ylabel('最短距离(km)')
-title('混合粒子群算法优化过程')
+xlabel('Iterations')
+ylabel('Min Distance(km)')
+title('HPSO Process')
 
 %% 绘制实际路线
 DrawPath(Gbest,City)

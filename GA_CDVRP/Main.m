@@ -63,7 +63,7 @@ while gen <= MAXGEN
     %% 亲代重插入子代
     Chrom=Reins(Chrom,SelCh,FitnV);
     %% 显示此代信息
-    fprintf('迭代次数 = %d,  最短距离 = %.2f km  \n',gen,mindisbygen)
+    fprintf('Iteration = %d, Min Distance = %.2f km  \n',gen,mindisbygen)
     %% 更新迭代次数
     gen=gen+1;
 end
@@ -87,14 +87,14 @@ figure
 plot(mindis,'LineWidth',2) %展示目标函数值历史变化
 xlim([1 gen-1]) %设置 x 坐标轴范围
 set(gca, 'LineWidth',1)
-xlabel('迭代次数')
-ylabel('最短距离(km)')
-title('遗传算法优化过程')
+xlabel('Iterations')
+ylabel('Min Distance(km)')
+title('GA Optimization Process')
 
 %% 计算结果数据输出到命令行
 disp('-------------------------------------------------------------')
 toc %显示运行时间
-fprintf('总距离 = %s km \n',num2str(mindisever))
+fprintf('Total Distance = %s km \n',num2str(mindisever))
 TextOutput(Distance,Demand,bestroute,Capacity)  %显示最优路径
 
 %% 绘制实际路线

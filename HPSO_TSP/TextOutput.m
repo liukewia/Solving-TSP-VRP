@@ -6,12 +6,12 @@ function TextOutput(route,mindisever)
 %输出：
 %p          路径的文本形式
 
-disp('最优路径:')
+disp('Best Route:')
 
 p=num2str(route(1)); %配送中心位先进入路径首位
 for i=2:length(route)
     p=[p,'—>',num2str(route(i))]; %路径依次加入下一个经过的点
 end
 disp(p)
-fprintf('总距离 = %s km \n',num2str(mindisever))
+fprintf('Total Distance = %s km \n',num2str(mindisever))
 disp('-------------------------------------------------------------')

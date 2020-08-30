@@ -16,8 +16,8 @@ tic % 保存当前时间
 %bestroute      最短路径
 %mindisever     路径长度
 %% 加载数据
-load City.mat	%需求点经纬度，用于画实际路径的XY坐标
-load Distance.mat	%距离矩阵
+load('../test_data/City.mat')	      %需求点经纬度，用于画实际路径的XY坐标
+load('../test_data/Distance.mat')	  %距离矩阵
 
 %% 初始化问题参数
 CityNum=size(City,1)-1;    %需求点个数
@@ -57,7 +57,7 @@ while gen <= MAXGEN
     %% 亲代重插入子代
     Chrom=Reins(Chrom,SelCh,FitnV);
     %% 显示此代信息
-    fprintf('迭代次数 = %d,  最短距离 = %.2f km \n',gen,mindisbygen)
+    fprintf('Num of Iterations = %d,  Min Distance = %.2f km \n',gen,mindisbygen)
     %% 更新迭代次数
     gen=gen+1;
 end
@@ -76,9 +76,9 @@ figure
 plot(mindis,'LineWidth',2) %展示目标函数值历史变化
 xlim([1 gen-1]) %设置 x 坐标轴范围
 set(gca, 'LineWidth',1)
-xlabel('迭代次数')
-ylabel('最短距离(km)')
-title('遗传算法优化过程')
+xlabel('Num of Iterations')
+ylabel('Min Distance(km)')
+title('GA Optimization Process')
 
 %% 绘制实际路线
 DrawPath(bestroute,City)

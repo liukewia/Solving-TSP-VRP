@@ -5,7 +5,7 @@ function TextOutput(route,Distance,TravelTime,Demand,TimeWindow,Capacity)
 
 %% 总路径
 len=length(route); %路径长度
-disp('最优路径:')
+disp('Best Route:')
 
 p=num2str(route(1)); %配送中心位先进入路径首位
 for i=2:len
@@ -36,9 +36,9 @@ for j=2:len
 
 	if route(j)==1 %若此位是配送中心
         disp('-------------------------------------------------------------')
-        fprintf('第 %d 辆车：行驶路径为 %s  \n',Vnum,subpath)%输出：每辆车 路径
-        fprintf('到达各点时刻为 %s min \n',subtime)%输出：到达各点时刻
-        fprintf('行驶路程为 %.2f km,行驶时间为 %.1f min,满载率为 %.2f%%;  \n',DisTraveled,CurrentTime,delivery/Capacity*100)%输出：行驶距离 满载率
+        fprintf('Route of Vehichle No.%d: %s  \n',Vnum,subpath)%输出：每辆车 路径
+        fprintf('Time of arrival: %s min \n',subtime)%输出：到达各点时刻
+        fprintf('Distance traveled: %.2f km, time elapsed: %.1f min, load rate: %.2f%%;  \n',DisTraveled,CurrentTime,delivery/Capacity*100)%输出：行驶距离 满载率
         Vnum=Vnum+1; %车辆数累加
         DisTraveled=0; %已行驶距离置零
         CurrentTime=0; %本车行驶时间置零
