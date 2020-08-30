@@ -12,7 +12,7 @@ disp('Best Route:')
 
 p=num2str(route(1)); %配送中心位先进入路径首位
 for i=2:len
-    p=[p,'—>',num2str(route(i))]; %路径依次加入下一个经过的点
+    p=[p,' -> ',num2str(route(i))]; %路径依次加入下一个经过的点
 end
 disp(p)
 
@@ -25,7 +25,7 @@ DisTraveled=0;  % 汽车已经行驶的距离
 subpath='0'; %子路径路线
 for j=2:len
     DisTraveled = DisTraveled+Distance(route(j-1),route(j)); %每两点间距离累加
-    subpath=[subpath,'—>',num2str(route(j)-1)]; %子路径路线输出
+    subpath=[subpath,' -> ',num2str(route(j)-1)]; %子路径路线输出
 
 	if route(j)==1 %若此位是配送中心
         disp('-------------------------------------------------------------')

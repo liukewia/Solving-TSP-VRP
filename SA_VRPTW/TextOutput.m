@@ -9,7 +9,7 @@ disp('最优路径:')
 
 p=num2str(route(1)); %配送中心位先进入路径首位
 for i=2:len
-    p=[p,'—>',num2str(route(i))]; %路径依次加入下一个经过的点
+    p=[p,' -> ',num2str(route(i))]; %路径依次加入下一个经过的点
 end
 disp(p)
 
@@ -29,8 +29,8 @@ for j=2:len
     
     CurrentTime=CurrentTime+TravelTime(route(j-1),route(j)); %每两点间行驶时间累加
     
-    subpath=[subpath,'—>',num2str(route(j)-1)]; %子路径路线输出
-    subtime=[subtime,'—',num2str(roundn(CurrentTime,-1))]; %子路径到达各点时刻输出
+    subpath=[subpath,' -> ',num2str(route(j)-1)]; %子路径路线输出
+    subtime=[subtime,' - ',num2str(roundn(CurrentTime,-1))]; %子路径到达各点时刻输出
     
     CurrentTime=max(CurrentTime,TimeWindow(route(j),1));  %若到达时间早于早时间窗，等待至早时间窗
     
