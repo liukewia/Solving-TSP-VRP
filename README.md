@@ -76,7 +76,7 @@ Distance traveled: 60.22 km, time elapsed: 128.2 min, load rate: 90.00%;
 
 ![Sample_of_TSP_Route_Map](https://github.com/liukewia/Solving-TSP-VRP/blob/master/images/Sample_of_TSP_Route_Map.jpg)
 
-4. Sample Graph of VRP Route Map
+4. Sample Graph of VRP Route Map (Hard Time window constraint was considered)
 
 ![Sample_of_VRP_Route_Map](https://github.com/liukewia/Solving-TSP-VRP/blob/master/images/Sample_of_VRP_Route_Map.jpg)
 
