@@ -2,7 +2,7 @@
 A MATLAB Implementation of Heuristic Algorithms to Traveling Salesman Problem and Vehicle Routing Problems.
 
 # Calculation Objective
-Minimum travel distance of all vehicles in each route planning. The objective can be something else other than distance if one wish.
+Minimum travel distance of all vehicles in each time of route planning. The objective can be something else other than distance if one wish.
 
 # Environment
 * MATLAB
