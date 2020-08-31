@@ -2,7 +2,7 @@
 A MATLAB Implementation of Heuristic Algorithms to Traveling Salesman Problem and Vehicle Routing Problems.
 
 ## Goal
-To explore the value of minimum distance that all vehicles travel in each time of route planning. (The objective value can be something else other than distance if one wish, such as time, cost, etc.)
+To explore the value of minimum distance that all vehicles travel in each time of route planning. (The type of the objective function can be something other than distance if one wish, such as time, cost, etc.)
 
 ## Environment
 * MATLAB
@@ -30,7 +30,7 @@ Folder name structure: `Algorithm Name` + `Problem Name`
 | CDVRP  | Vehicle Routing Problem with travel distance and capacity constraint  |
 | VRPTW  | Vehicle Routing Problem with travel distance constraint, capacity constraint, and hard time window constraint |
 
-## Sample Output
+## Output Result
 
 1. Sample Text Output in the Command Window
 
@@ -83,6 +83,7 @@ Distance traveled: 60.22 km, time elapsed: 128.2 min, load rate: 90.00%;
 
 ## Usage
 Pull the source code from `master` and open `Main.m` in either folder (if the file exists) to run that solver.
+Edit files in the folder `test_data` to apply the solvers to your own problems.
 
 ## License
 GNU General Public License (GPL)
